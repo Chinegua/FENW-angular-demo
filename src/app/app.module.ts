@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { RouteComponent } from './route/route.component';
 import { SubCompComponent } from './sub-comp/sub-comp.component';
 import { DirectiveMiwComponent } from './directive-miw/directive-miw.component';
+import { PipeComponent } from './pipe/pipe.component';
 import { ObserverComponent } from './observer/observer.component';
 import { GithubService } from './api-github/github.service';
 import { ApiItemsComponent } from './api-items/api-items.componet';
@@ -33,7 +34,7 @@ import { ApiItemsService } from './api-items/api-items.service';
   declarations: [
     AppComponent, TypescriptComponent, BindingComponent, SubCompComponent, DirectiveNgComponent,
     CrudComponent, ApiResponseComponent, ApiGithubComponent, ApiItemsComponent, HomeComponent, RouteComponent, NumberComponent,
-    DirectiveMiwComponent, ObserverComponent
+    DirectiveMiwComponent, ObserverComponent, PipeComponent
   ],
   bootstrap: [AppComponent],
   providers: [HttpService, GithubService, ApiItemsService]

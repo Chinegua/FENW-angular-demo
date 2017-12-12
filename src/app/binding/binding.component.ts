@@ -12,4 +12,7 @@ export class BindingComponent {
     event(title: string) {
         this.title = title;
     }
+    event2(msg: any) {
+        alert(msg);
+    }
 }

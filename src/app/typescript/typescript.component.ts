@@ -9,7 +9,9 @@ import { Employee } from '../shared/employee.model';
 })
 // export VS public
 export class TypescriptComponent {
-    // public title:string VS public String title
+    static readonly stat = 10;
+
+    // title:string VS public String title
     title = 'Angular 4. Demo'; // Si se inicializa valor, se extrae su tipo
 
     isDone = false;                                      // boolean
@@ -38,7 +40,8 @@ export class TypescriptComponent {
     clazz: Clazz = new Clazz(1, 2, 3);                   // Clazz
     clazz2: Clazz = new Clazz(1, 2);                     // Clazz
     clazz3: Clazz = new Clazz(1);                        // Clazz
-    list1: Array<number> = [1, 2, 3];                    // number[]
+    list1: number[] = [1, 2, 3];                         // number[]
+    list2: Array<number> = [1, 2, 3];                    // number[]
 
     various(): string {
         let var1: string;                              // Se define variable

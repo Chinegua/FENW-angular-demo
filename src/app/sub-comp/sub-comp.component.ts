@@ -5,15 +5,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-sub-comp',
   template: `<h3>sub-component</h3>
              <p>{{subComponentProperty}}</p>
-             <p><button (click)='event()'>event</button>`
+             <p><button (click)='event($event)'>event</button>`
 })
 export class SubCompComponent {
 
   @Input() subComponentProperty: String;
 
-  @Output() subComponentEvent = new EventEmitter<string>();
+  @Output() subComponentEvent = new EventEmitter<any>();
 
-  event() {
-    this.subComponentEvent.emit('valueOfSon');
+  event(msg) {
+    this.subComponentEvent.emit(msg);
+    // this.subComponentEvent.emit('value');
   }
 }
