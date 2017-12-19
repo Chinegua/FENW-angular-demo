@@ -19,7 +19,17 @@
 <number [min]="0" [max]="100" [value]="6" (valueOut)="value=$event"></number>
 <p>Valor del subcomponente Number (solo si es válido):{{value}}</p>
 
+<number (valueOut)="valor=$event"></number>
+<p>Valor:{{valor}}</p>
 <hr>
+<h2>SUB2</h2>
+<sub2 [min]="0" [max]="100" [value]="6" (valueOut)="value=$event"></sub2>
+<p>Valor del subcomponente Number (solo si es válido):{{value}}</p>
+
+<sub2 (valueOut)="valor=$event"></sub2>
+<p>Valor:{{valor}}</p>
+<hr>
+
 
 <h2>Directivas ng*</h2>
 <app-directive-ng></app-directive-ng>

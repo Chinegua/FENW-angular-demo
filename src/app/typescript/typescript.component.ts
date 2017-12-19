@@ -42,6 +42,16 @@ export class TypescriptComponent {
     clazz3: Clazz = new Clazz(1);                        // Clazz
     list1: number[] = [1, 2, 3];                         // number[]
     list2: Array<number> = [1, 2, 3];                    // number[]
+    name: string;
+    whoMyName(): string {
+        return this.name;
+    }
+    myNameIs(){
+        this.name = "Aitor Bernal";
+    }
+    myNoName(){
+        this.name=null;
+    }
 
     various(): string {
         let var1: string;                              // Se define variable

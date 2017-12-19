@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-    selector: 'number',
-    templateUrl: 'number.component.html',
-    styleUrls: ['number.component.css'],
+    selector: 'sub2',
+    templateUrl: 'sub2.component.html',
+    styleUrls: ['sub2.component.css'],
 })
-export class NumberComponent {
+export class SubCompComponent2 {
     @Input() min: number = undefined;
     @Input() max: number = undefined;
     @Input() value = 0;
